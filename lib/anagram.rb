@@ -15,7 +15,13 @@ def initialize()
 end
 
   
-  
+  def initialize(discount=0)
+  @total = 0
+  @discount = discount
+  @item = []
+  @last_item = 0
+end
+
   
   
   
