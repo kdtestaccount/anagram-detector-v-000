@@ -15,7 +15,7 @@ end
   @last_item = 0
 end
 
-def match(possible_anagrams)
+def self.match(possible_anagrams)
   
 end
   
