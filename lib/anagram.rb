@@ -8,7 +8,7 @@ def initialize(word)
 end
 
 def self.match(possible_anagrams)
-  
+  @word.each_char.sort
 end
   
   
