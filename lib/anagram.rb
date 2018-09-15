@@ -10,7 +10,7 @@ end
 def self.match(possible_anagrams)
   word_size = @word.size
   word_by_letter = @word.each_char.sort
-  possible_anagrams.select{|w| anagram?()}
+  possible_anagrams.select{|w| anagram?(word_size, word_by_letter, w)}
 end
   
 
