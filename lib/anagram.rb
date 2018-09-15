@@ -13,7 +13,10 @@ def match(possible_anagrams)
   possible_anagrams.select{|w| anagram?(word_size, word_by_letter, w)}
 end
   
-
+def anagram?(target_size, target_sorted, w)
+  return false unless w.size == target_size
+  w.each_char.sort == target_sorted
+end
   
   
   
